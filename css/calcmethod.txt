@@ -1,0 +1,20 @@
+In CSS, the calc() method is used to perform calculations to determine property values dynamically. 
+However, calc() itself doesn't directly repeat or animate. 
+When combined with CSS timing functions (like in animations or transitions),
+ it can be used to calculate positions, sizes, etc., while the repetition or timing is handled by the animation or transition rules.
+
+ 💡 Breakdown
+calc(100% - 100px) calculates the distance from the left edge of the container to move the box to the far right (while considering the box width).
+
+animation: moveBox 2s ease-in-out infinite; makes it repeat infinitely every 2 seconds.
+
+ease-in-out is the timing function, which controls the speed curve.
+
+
+🎯 Use Cases for calc() in Animations or Repeats
+Moving elements based on dynamic container sizes
+
+Resizing elements responsively
+
+Adjusting positions inside a looped animation
+

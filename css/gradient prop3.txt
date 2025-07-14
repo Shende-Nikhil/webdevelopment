@@ -1,0 +1,39 @@
+CSS defines three types of gradients:
+
+1) Linear Gradients (goes down/up/left/right/diagonally)
+2) Radial Gradients (defined by their center)
+3) Conic Gradients (rotated around a center point)
+
+1-> CSS Linear Gradients (up/down/right/diagonally)
+ To create a linear gradient you must define at least two color stops.
+ Color stops are the colors you want to render smooth transitions among.
+ You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+Syntax
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+
+
+2-> CSS Radial Gradients  (defined by their center)
+A radial gradient is defined by its center.
+
+To create a radial gradient you must also define at least two color stops.
+
+Syntax
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+
+By default, shape is ellipse, size is farthest-corner, and position is center.
+
+3-> CSS Conic Gradients (rotated around a center point)
+A conic gradient is a gradient with color transitions rotated around a center point.
+
+To create a conic gradient you must define at least two colors.
+
+Syntax
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+By default, angle is 0deg and position is center.
+
+If no degree is specified, the colors will be spread equally around the center point.
+
+
+
+

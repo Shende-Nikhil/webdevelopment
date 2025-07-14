@@ -1,0 +1,8 @@
+text Shadow
+The text-shadow property adds shadow to text.
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+This property accepts a comma-separated list of shadows to be applied to the text.
+
+

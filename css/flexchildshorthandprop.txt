@@ -1,0 +1,12 @@
+SHORTHAND Property in flex children is :-
+
+syntax:-
+flex: <flex-grow> <flex-shrink> <flex-basis>;
+
+This shorthand sets the three individual flex child properties:
+
+1->flex-grow: defines how much the item will grow relative to others
+
+2->flex-shrink: defines how much the item will shrink relative to others
+
+3->flex-basis: defines the default size before growing or shrinking

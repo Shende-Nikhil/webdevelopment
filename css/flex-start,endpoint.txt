@@ -1,0 +1,31 @@
+flex-start and flex-end are reference points used for alignment within a flex container.
+
+1-> flex-start
+Aligns items at the beginning of the main axis or cross axis (depending on the property).
+
+It's the default value for justify-content.
+
+2-> flex-end
+Aligns items at the end of the main or cross axis.
+
+->Main Axis vs Cross Axis:
+Main axis = horizontal (row) or vertical (column) depending on flex-direction.
+
+Cross axis = the perpendicular direction to the main axis.
+
+->example(horizontal layout):-
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* items align left */
+  align-items: flex-end;       /* items align bottom */
+}
+
+-> example (vertical layout):-
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* items align at bottom */
+  align-items: flex-start;   /* items align at left */
+}

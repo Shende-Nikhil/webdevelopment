@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #b3e5fc;
+    }
+    .parent{
+        width:fit-content;
+        height: 600px;
+
+    }
+
+    header, footer {
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    aside {
+      background-color: #48d74f;
+      color: white;
+      flex: 1;
+      padding: 50px;
+      margin-right: 20px;
+    }
+
+    article {
+      background-color: #ffb74d;
+      color: white;
+      flex: 3;
+      padding: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:3rem;
+    }
+
+    .images {
+      display: flex;
+      gap: 20px;
+      margin-top: auto;
+    }
+
+    .image-box {
+      background-color: #ffd54f;
+      flex: 1;
+      padding: 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="parent">
+
+  <header>Header</header>
+
+  <div class="container">
+    <aside>Aside</aside>
+    <article>
+      <div>Article</div>
+      <div class="images">
+        <div class="image-box">Image</div>
+        <div class="image-box">Image</div>
+        <div class="image-box">Image</div>
+      </div>
+    </article>
+  </div>
+
+  <footer>Footer</footer>
+    </div>
+
+</body>
+</html>

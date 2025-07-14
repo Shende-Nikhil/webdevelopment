@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Roll no. :</td>
+                <td><input type="text" name="rollno" /></td>
+            </tr>
+
+            <tr>
+                <td>Student name :</td>
+                <td>
+                    <input type="text" placeholder="First Name" />
+                    -
+                    <input type="text" placeholder="Last Name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Father's name :</td>
+                <td><input type="text" name="fathername" /></td>
+            </tr>
+
+            <tr>
+                <td>Date of birth :</td>
+                <td>
+                    <input type="text" placeholder="Day" size="4" />
+                    -
+                    <input type="text" placeholder="Month" size="4" />
+                    -
+                    <input type="text" placeholder="Year" size="6" />
+                    <i>(DD-MM-YYYY)</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile no. :</td>
+                <td>
+                    <input type="text" value="+91" size="4" />
+                    -
+                    <input type="text" name="mobile" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email id :</td>
+                <td><input type="email" name="email" /></td>
+            </tr>
+
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" name="gender" /> Male
+                    <input type="radio" name="gender" /> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Department :</td>
+                <td>
+                    <input type="checkbox" name="dept" /> CSE
+                    <input type="checkbox" name="dept" /> IT
+                    <input type="checkbox" name="dept" /> ECE
+                    <input type="checkbox" name="dept" /> Civil
+                    <input type="checkbox" name="dept" /> Mech
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course :</td>
+                <td>
+                    <select>
+                        <option>-------------------- Select Current Course's --------------------</option>
+                        <option>B.Tech</option>
+                        <option>M.Tech</option>
+                        <option>B.Sc</option>
+                        <option>M.Sc</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Student photo :</td>
+                <td><input type="file" name="photo" /></td>
+            </tr>
+
+            <tr>
+                <td>City :</td>
+                <td><input type="text" name="city" /></td>
+            </tr>
+
+            <tr>
+                <td>Address :</td>
+                <td><textarea rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Register" /></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>

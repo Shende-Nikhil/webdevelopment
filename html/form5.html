@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Registration</title>
+</head>
+<body>
+
+   <h1 style="text-align: center;">Job Appliaction Registration</b></h1>
+
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset style="width: 500px; margin:auto;">
+
+    
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname"><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="resume">Resume (PDF or Word):</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+    <label for="position">Position Applied:</label><br>
+    <select id="position" name="position">
+      <option value="">Select Position</option>
+      <option value="developer">Developer</option>
+      <option value="designer">Designer</option>
+      <option value="manager">Manager</option>
+      <!-- Add more options as needed -->
+    </select><br><br>
+
+    <input type="submit" value="Submit Application">
+    </fieldset>
+    
+  </form>
+
+</body>
+</html>

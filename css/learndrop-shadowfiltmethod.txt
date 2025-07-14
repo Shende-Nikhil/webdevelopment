@@ -1,0 +1,15 @@
+learn drop-shadow()filter method:-
+
+The CSS drop-shadow() filter function applies drop shadow effect to an image
+
+CSS Syntax:-
+drop-shadow(h-shadow v-shadow blur spread color)
+
+Value	Description
+
+h-shadow--	Required. Specifies a pixel value for the horizontal shadow. Negative values place the shadow to the left of the image
+v-shadow--	Required. Specifies a pixel value for the vertical shadow. Negative values place the shadow above the image
+blur--	    Optional. Adds a blur effect to the shadow, in pixels. A larger value will create more blur (the shadow becomes bigger and lighter). 
+                      Negative values are not allowed. If no value is specified, 0 is used (the shadow's edge is sharp)
+spread--	    Optional. Must be in pixels. Positive values will cause the shadow to expand and grow bigger, and negative values will cause the shadow to shrink. If not specified, it will be 0 (the shadow will be the same size as the element)
+color--    Optional. Adds a color to the shadow. If not specified, the color depends on the browser (often black)

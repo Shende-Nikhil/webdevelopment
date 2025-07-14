@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .layer1, .layer2, .layer3 {
+      border: 2px solid white;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: 50px;
+      opacity: 0.8;
+    }
+
+    .layer1 {
+      background-color: red;
+      z-index: 1;
+    }
+
+    .layer2 {
+      background-color: green;
+      top: 70px;
+      left: 70px;
+      z-index: 2;
+    }
+
+    .layer3 {
+      background-color: blue;
+      top: 90px;
+      left: 90px;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layer1"></div>
+  <div class="layer2"></div>
+  <div class="layer3"></div>
+
+</body>
+</html>

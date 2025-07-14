@@ -1,0 +1,14 @@
+summary of internet:-
+
+-> In 1969, the American Department of Defense (DOD) started a network of devices
+called ARPANET (Advanced Research Project Administration Network).
+
+-> The Internet, referred to as the Net,consists of a complex network of computers
+connected by high-speed communication technologies.
+
+-> Functioning of the internet is not controlled by any one perticular organisation.
+It is managed by a group of voluntary organisations.
+
+-> Rules for communication over the internet are called as protocals.
+
+-> The electronics pages seen on the Internet are knows as web pages.

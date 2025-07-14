@@ -1,0 +1,11 @@
+The inline-size CSS property defines the size of an element's block along the inline axis. 
+If the writing-mode is horizontal, 
+it corresponds to the width ; if the writing mode is vertical, it corresponds to the height . 
+A related property is block-size , which defines the other dimension of the element.
+
+inline-block Value
+Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:

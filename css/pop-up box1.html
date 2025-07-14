@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popup Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .popup-link {
+      padding: 10px 20px;
+      background-color: #008CBA;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Popup container (hidden by default) */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      display: none;
+    }
+
+    /* Show when targeted */
+    .popup:target {
+      display: block;
+    }
+
+    /* Popup content box */
+    .popup-content {
+      background: white;
+      width: 300px;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .close-btn:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Popup Example Using Only HTML and CSS</h2>
+  <a href="#popup1" class="popup-link">Open Popup</a>
+
+  <!-- Popup Structure -->
+  <div id="popup1" class="popup">
+    <div class="popup-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h3>This is a Pop-up!</h3>
+      <p>Here is some pop-up content without using JavaScript.</p>
+    </div>
+  </div>
+
+</body>
+</html>
