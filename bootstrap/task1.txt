@@ -1,0 +1,30 @@
+*Summary of CSS Library:-
+A CSS library is a collection of pre-written CSS code that,
+ helps developers quickly style websites and web applications without writing CSS from scratch. 
+ These libraries provide ready-to-use classes, components, and design patterns.
+
+Popular CSS libraries are:-
+1 -Bootstrap
+2 - Tailwind CSS
+
+*BOOTSTRAP:--
+         Bootstrap is the most popular HTML, CSS, and JavaScript framework for building responsive and mobile-first websites.
+         It provides pre-defined classes, components, and a grid system to make web development faster and easier.
+          Main Things:--
+                    1-Utilities
+                    2-Layout
+                    3-Content
+                    4-components
+It written in body inside html element.
+We can connect through online CDN or via offline file.                   
+
+*TAILWIND:-- 
+           Tailwind CSS is a utility-first CSS framework that allows developers to build custom designs directly in HTML using small, 
+           reusable utility classes. Instead of writing CSS rules separately, you apply styles inline through these classes. 
+Features of Tailwind CSS:---
+✅ Utility-First Approach (Write styles in HTML)
+✅ Highly Customizable via configuration file (tailwind.config.js)
+✅ Responsive Design using breakpoints easily
+✅ No Pre-made Components (You build your own)
+✅ Dark Mode & Variants Support
+✅ Optimized for Production
