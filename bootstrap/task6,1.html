@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Display </title>
+  <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+</head>
+<style>
+    .d-flex{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<body>
+
+  <div class="container mt-4">
+    <h2>Bootstrap Display </h2>
+
+    <div class="d-block bg-primary text-white p-2 mb-2">
+      This is block display
+    </div>
+
+    <span class="d-inline bg-success text-white p-2 mb-2">
+      This is inline display
+    </span>
+
+    <div class="d-inline-block bg-warning text-dark p-2 mb-2">
+      This is inline-block display
+    </div>
+
+    <div class="d-flex flex-column flex-wrap  bg-danger  p-2 mb-2">
+      <div class="p-2">Flex item 1</div>
+      <div class="p-2">Flex item 2</div>
+    </div>
+
+    <div class="d-none">
+      This will be hidden
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Positioning </title>
+  <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css">
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <div class="position-relative bg-info  box mb-3">
+    Relative
+    <div class="position-absolute top-0 start-100 translate-middle bg-danger p-2 rounded">
+      Absolute box
+    </div>
+  </div>
+
+  <div class="position-relative box bg-light border border-dark mb-3">
+    <div class="position-absolute top-0 start-0 bg-warning p-2">Top Start</div>
+    <div class="position-absolute bottom-0 end-0 bg-success p-2">Bottom End</div>
+  </div>
+
+  <div class="position-fixed bottom-0 end-0 bg-primary  p-2">
+    Fixed (Bottom Right)
+  </div>
+
+  <div class="position-sticky top-0 bg-dark text-white p-2">
+    Sticky Header
+  </div>
+
+  <div style="height: 1000px;"></div> 
+
+  <div class="position-relative bg-light box border">
+    <div class="position-absolute top-50 start-50 translate-middle bg-danger text-white p-2">
+      Centered
+    </div>
+  </div>
+
+</body>
+</html>
