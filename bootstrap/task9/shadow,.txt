@@ -1,0 +1,18 @@
+Shadows:-
+
+Add or remove shadows to elements with box-shadow utilities.
+In Bootstrap, shadows are a visual effect applied to components to create a sense of depth and layering. 
+Bootstrap offers utility classes to easily add or remove shadows,
+and these classes can be used to control the size and appearance of the shadow. 
+By default, shadows are disabled in Bootstrap and can be enabled by setting 
+the $enable-shadows Sass variable to true or by using the utility classes directly.
+
+Examples 
+While shadows on components are disabled by default in Bootstrap and can be enabled via $enable-shadows, 
+you can also quickly add or remove a shadow with our box-shadow utility classes.
+Includes support for .shadow-none and three default sizes (which have associated variables to match).
+
+1-No shadow
+2-Small shadow
+3-Regular shadow
+4-Larger shadow
