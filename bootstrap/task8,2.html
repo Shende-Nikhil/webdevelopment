@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Sizing Example</title>
+  <link href="./bootstrap-5.3.7-dist/css/bootstrap.css" rel="stylesheet">
+  <style>
+    .box {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h3>Width Classes</h3>
+    <div class="box w-25">w-25</div>
+    <div class="box w-50">w-50</div>
+    <div class="box w-75">w-75</div>
+    <div class="box w-100">w-100</div>
+
+    <h3>Height Classes</h3>
+    <div class="box h-25" style="height: 200px;">h-25 (box container height: 200px)</div>
+    <div class="box h-50" style="height: 200px;">h-50</div>
+    <div class="box h-75" style="height: 200px;">h-75</div>
+    <div class="box h-100" style="height: 200px;">h-100</div>
+
+    <h3>Max Width/Height</h3>
+    <div class="box" style="max-width: 200px;">Max-width: 200px</div>
+    <div class="box" style="max-height: 100px; overflow:auto;">Max-height: 100px<br>Extra<br>content<br>to<br>scroll</div>
+  </div>
+
+</body>
+</html>
