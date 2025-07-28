@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offcanvas</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.7-dist/css/bootstrap.css">
+  <script src="../bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Button to trigger offcanvas -->
+  <div class="container mt-5">
+    <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+      Open Offcanvas
+    </button>
+  </div>
+
+  <!-- Offcanvas component -->
+  <div class="offcanvas offcanvas-start" id="sidebar" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>This is the offcanvas content.</p>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          open
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item">Home</a></li>
+          <li><a class="dropdown-item">About</a></li>
+          <li><a class="dropdown-item">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
