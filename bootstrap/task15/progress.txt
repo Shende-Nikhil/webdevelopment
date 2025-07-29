@@ -1,0 +1,68 @@
+In Bootstrap, the Progress component is used to display the progress of a task or process. It provides a visual representation using progress bars that can be styled and customized.
+
+🔹 Key Features of Bootstrap Progress
+Base Progress Bar:
+
+1-Uses .progress as the container.
+
+.progress-bar is the child element that shows the actual progress.
+
+Width is controlled using inline styles or utility classes (e.g., style="width: 50%;").
+
+2-Striped Progress Bars:
+
+Add .progress-bar-striped to make the bar display stripes.
+
+Stripes are purely visual and don’t indicate activity unless animated.
+
+3-Animated Progress Bars:
+
+Add .progress-bar-animated along with .progress-bar-striped.
+
+Creates a looping animation effect to indicate ongoing activity.
+
+4-Multiple Bars:
+
+You can include multiple .progress-bar elements inside one .progress container.
+
+Useful to show different segments of a whole.
+
+5-Contextual Variants:
+
+Bootstrap supports contextual classes like .bg-success, .bg-info, .bg-warning, .bg-danger, etc.
+
+These change the color of the progress bar to match the context.
+
+6- Labels:
+
+You can add text inside the progress bar to show percentage or other info.
+
+Text should be placed inside the .progress-bar.
+
+Height Customization:
+
+The default height is small, but you can increase it by applying custom height using utility classes like style="height: 20px;".
+
+7- Accessibility:
+
+Use aria-* attributes (aria-valuenow, aria-valuemin, aria-valuemax) to improve accessibility.
+
+Helps screen readers convey progress information to visually impaired users.
+
+🔸 Common Use Cases
+File upload progress
+
+Task completion status
+
+Step-by-step operations
+
+Data loading indicators
+
+**-How it works 
+Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use the HTML5 <progress> element, ensuring you can stack progress bars, animate them, and place text labels over them.
+
+We use the .progress as a wrapper to indicate the max value of the progress bar.
+The .progress wrapper also requires a role="progressbar" and aria attributes to make it accessible, including an accessible name (using aria-label, aria-labelledby, or similar).
+We use the inner .progress-bar purely for the visual bar and label.
+The .progress-bar requires an inline style, utility class, or custom CSS to set its width.
+We provide a special .progress-stacked class to create multiple/stacked progress bars.

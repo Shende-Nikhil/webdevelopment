@@ -1,0 +1,64 @@
+🔹 Key Concepts of Bootstrap Placeholders
+Purpose:
+
+To show a temporary UI representation while actual content (like text, images, buttons) is loading.
+
+Enhances perceived performance and improves user experience.
+
+1- Class Usage:
+
+Uses the .placeholder class to create placeholder elements.
+
+Additional utility classes help define size, color, animation, and shape.
+
+2- Types of Placeholders:
+
+Text placeholders: Simulate loading text or paragraphs.
+
+Button/image placeholders: Simulate interactive components or visuals.
+
+Grid/card placeholders: Often used in cards or list items to maintain layout.
+
+3- Animation Support:
+
+.placeholder-glow: Creates a subtle glowing animation.
+
+.placeholder-wave: Creates a wave-like shimmer animation effect.
+
+These make placeholders feel more dynamic and responsive.
+
+4- Sizing and Shape:
+
+Placeholder elements can adopt sizing classes like .col-*, .w-*, .h-*, etc.
+
+Can also be made rounded (.rounded) or circle (.rounded-circle) for avatar-like placeholders.
+
+5- Color Customization:
+
+Colors can be adjusted using contextual text color classes like .bg-primary, .bg-secondary, etc.
+
+6- Responsiveness:
+
+Placeholders are responsive and can be easily integrated into Bootstrap’s grid system and 
+components like cards, lists, and tables.
+
+7- Accessibility Consideration:
+
+Use aria-hidden="true" on placeholder elements.
+
+Ensure screen readers do not treat placeholders as real content.
+
+🔸 Common Use Cases
+Content loading in cards, modals, or tables
+
+Simulating form fields before data loads
+
+Skeleton screens for apps or dashboards
+
+**- How it works 
+Create placeholders with the .placeholder class and a grid column class (e.g., .col-6) to set the width.
+ They can replace the text inside an element or be added as a modifier class to an existing component.
+
+We apply additional styling to .btns via ::before to ensure the height is respected. You may extend this pattern for other situations as needed,
+ or add a &nbsp; within the element to reflect the height when actual text is rendered in its place.
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Alert Variations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap-5.3.7-dist/css/bootstrap.css">
+  <script src="../bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-4">
+
+  <h2>1. Basic Alerts</h2>
+  <div class="alert alert-primary" role="alert">Primary alert!</div>
+  <div class="alert alert-secondary" role="alert">Secondary alert!</div>
+  <div class="alert alert-success" role="alert">Success alert!</div>
+  <div class="alert alert-danger" role="alert">Danger alert!</div>
+  <div class="alert alert-warning" role="alert">Warning alert!</div>
+  <div class="alert alert-info" role="alert">Info alert!</div>
+  <div class="alert alert-light" role="alert">Light alert!</div>
+  <div class="alert alert-dark" role="alert">Dark alert!</div>
+
+  <h2 class="mt-4">2. Dismissible Alerts</h2>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    Dismissible warning alert!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    Danger alert with close button!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <h2 class="mt-4">3. Alert with Heading and Content</h2>
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>You successfully read this important alert message.</p>
+    <hr>
+    <p class="mb-0">Use margin utilities to keep things spaced properly.</p>
+  </div>
+
+  <h2 class="mt-4">4. Alert with Link</h2>
+  <div class="alert alert-info" role="alert">
+    This is an info alert with <a href="#" class="alert-link">an example link</a>.
+  </div>
+
+  <h2 class="mt-4">5. Alerts with Icons</h2>
+  <div class="alert alert-primary d-flex align-items-center" role="alert">
+    <i class="bi bi-info-circle-fill me-2"></i>
+    <div>Info alert with icon!</div>
+  </div>
+
+  <div class="alert alert-danger d-flex align-items-center" role="alert">
+    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+    <div>Danger alert with icon!</div>
+  </div>
+
+  <h2 class="mt-4">6. Dismissible Alert with Icon</h2>
+  <div class="alert alert-success alert-dismissible fade show d-flex align-items-center" role="alert">
+    <i class="bi bi-check-circle-fill me-2"></i>
+    <div>Success alert with icon and close button!</div>
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+</body>
+</html>

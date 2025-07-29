@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Dropdown Variations</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.7-dist/css/bootstrap.css">
+  <script src="../bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-4">
+
+
+  <div class="dropdown mb-3">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      single button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+
+  
+  <div class="dropdown mb-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      With Divider
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">First</a></li>
+      <li><a class="dropdown-item" href="#">Second</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+
+  <div class="dropdown mb-3">
+    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      With Header
+    </button>
+    <ul class="dropdown-menu">
+      <li><h6 class="dropdown-header">Dropdown header</h6></li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+    </ul>
+  </div>
+
+  
+  <div class="dropdown mb-3">
+    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Active / Disabled
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item active" href="#">Active item</a></li>
+      <li><a class="dropdown-item" href="#">Normal item</a></li>
+      <li><a class="dropdown-item disabled" href="#">Disabled item</a></li>
+    </ul>
+  </div>
+
+
+  <div class="dropup mb-3">
+    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Dropup
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Item 1</a></li>
+      <li><a class="dropdown-item" href="#">Item 2</a></li>
+    </ul>
+  </div>
+
+  
+  <div class="dropend mb-3">
+    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Dropend
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Right Item 1</a></li>
+      <li><a class="dropdown-item" href="#">Right Item 2</a></li>
+    </ul>
+  </div>
+
+  
+  <div class="dropstart mb-3">
+    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Dropstart
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Left Item 1</a></li>
+      <li><a class="dropdown-item" href="#">Left Item 2</a></li>
+    </ul>
+  </div>
+
+  
+  <ul class="nav nav-pills mb-3">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle btn btn-outline-primary" data-bs-toggle="dropdown" href="#" role="button">
+        Nav Dropdown
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  
+  <div class="dropdown mb-3">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Dropdown Form
+    </button>
+    <div class="dropdown-menu p-4">
+      <form>
+        <div class="mb-3">
+          <label for="emailDropdown" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailDropdown" placeholder="email@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="passwordDropdown" class="form-label">Password</label>
+          <input type="password" class="form-control" id="passwordDropdown" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
