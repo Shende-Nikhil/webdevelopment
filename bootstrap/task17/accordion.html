@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="../bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container border border-dark p-5">
+            <div class="accordion" id="accordion1">
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#accordion-item-1"
+                            data-bs-toggle="collapse"> Front-end
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse show" id="accordion-item-1" data-bs-parent="#accordion1">
+                        <div class="accordion-body bg-info">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-target="#accordion-item-2"
+                            data-bs-toggle="collapse"> Responsive web
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="accordion-item-2" data-bs-parent="#accordion1">
+                        <div class="accordion-body bg-danger">
+                            <ul>
+                                <li>Tablets</li>
+                                <li>Mobiles</li>
+                                <li>Desktop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-target="#accordion-item-3"
+                            data-bs-toggle="collapse">Web Browser
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="accordion-item-3" data-bs-parent="#accordion1">
+                        <div class="accordion-body bg-warning">
+                            <ul>
+                                <li>Chrome</li>
+                                <li>FireFox</li>
+                                <li>Desktop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

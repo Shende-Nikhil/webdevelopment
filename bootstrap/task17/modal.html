@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap-5.3.7-dist/css/bootstrap.css">
+
+    <script src="../bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container p-5  my-5 border border-dark">
+            <button class="btn btn-info" data-bs-target="#modal1" data-bs-toggle="modal">open modal</button>
+        </div>
+    </div>
+
+    
+
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <span class="text-light">Enquiry Form</span>
+                    <button class="btn-close bg-light" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="placeholder col-12 d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <form>
+                            <div class="form group">
+                                <input type="text" class="form control" name="" placeholder="Enter your name">
+                            </div><br>
+
+                            <div class="form group">
+                                <input type="email" class="form control" name="" placeholder="Enter your email id">
+                            </div><br>
+
+                            <div class="form group">
+                                <input type="tel" class="form control" name="" placeholder="Enter your mobile number">
+                            </div>
+                        </form>
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success">submit</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
