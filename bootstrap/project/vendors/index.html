@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../vendors/bootstrap-5.3.7-dist/css/bootstrap.css">
+
+    <!-- bootstrap js -->
+    <script src="../vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="../vendors/fontawesome/css/all.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <header id="header" class="position-sticky top-0 z-3">
+        <div class="container-fluid bg-light shadow">
+            <div class="container">
+                <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+                    <div class="navbar-brand d-flex gap-1">
+                        <div class="bg-dark rounded-circle position-relative" style="width: 40px; height: 40px;">
+                            <i
+                                class="fa-solid fa-code text-accent3 position-absolute start-50 top-50 translate-middle"></i>
+                        </div>
+                        <span class="fw-bolder text-dark fs-4">
+                            Code-Hopper
+                        </span>
+                    </div>
+
+                    <button data-bs-toggle="offcanvas" data-bs-target="#main-menu"
+                        class="navbar-toggler bg-dark text-light">
+                        <span class="navbar-toggler-icon bg-light rounded"></span>
+                        <span class="fw-bolder">Menu</span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" id="main-menu">
+                        <div class="d-block d-md-none offcanvas-header bg-dark d-flex justify-content-between">
+                            <span class="text-light">Main Menu</span>
+                            <button class="btn btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto gap-4 nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hero">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#faq">Faq</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#blog">Blog</a>
+                                </li>
+                                <li>
+                                    <button class="navbar-cta">Hire Me !</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="background"></div>
+        <div class="content">
+            <div class="container">
+                <div class="row flex-md-row flex-column">
+                    <div class="col text d-flex flex-column gap-3 justify-content-center align-items-start">
+                        <div class="title fs-1">
+                            <span class="text-accent3 fw-bolder">HI!</span>
+                            <span class="fw-bolder">I'm Amey Khondekar</span>
+                        </div>
+                        <div class="short-title">
+                            <span class="fs-3">
+                                Lorem ipsum dolor sit amet.
+                            </span>
+                        </div>
+                        <div class="discription">
+                            <p class="opacity-50">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium fugiat expedita
+                                doloribus, beatae sapiente pariatur quos porro iste! Laboriosam assumenda quam nobis
+                                itaque. Amet beatae voluptatum nostrum maxime labore!
+                            </p>
+                        </div>
+
+                        <!-- hero cta -->
+                        <button class="navbar-cta">Hire Me !</button>
+                    </div>
+                    <div class="col media">
+                        <img class="img-fluid" src="../media/hero-image-3.png" alt="hero">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid bg-dark-custom p-5">
+            <div class="container">
+                <div class="perk-section">
+                    <div class="text-data text-light">
+                        <h1 class="fw-bolder">
+                            <span class="d-block">We Shape</span> ThePerfect Solutions
+                        </h1>
+                        <p>
+                            A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
+                            mouth.
+                        </p>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon">
+                            <img src="../media/perk.icon/icon1.png" alt="">
+                        </div>
+                        <div class="title text-light">
+                            Digital Product
+                        </div>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon">
+                            <img src="../media/perk.icon/icon2.png" alt="">
+                        </div>
+                        <div class="title text-light">
+                            Online Marketing 
+                        </div>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon">
+                            <img src="../media/perk.icon/icon3.png" alt="">
+                        </div>
+                        <div class="title text-light">
+                            Graphic Design
+                        </div>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon">
+                            <img src="../media/perk.icon/icon4.png" alt="">
+                        </div>
+                        <div class="title text-light">
+                            Application Development
+                        </div>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon">
+                            <img src="../media/perk.icon/icon5.png" alt="">
+                        </div>
+                        <div class="title text-light">
+                            Web Development
+                        </div>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon">
+                            <img src="../media/perk.icon/icon6.png" alt="">
+                        </div>
+                        <div class="title text-light">
+                            UX/UI Design
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq"></section>
+    <section id="services"></section>
+    <section id="portfolio"></section>
+    <section id="blog"></section>
+    <footer id="footer"></footer>
+</body>
+
+</html>
