@@ -1,0 +1,54 @@
+1>DEFINE:->
+JavaScript is a versatile, dynamically typed programming language that brings life to web pages by making them interactive. 
+It is used for building interactive web applications,
+supports both client-side and server-side development, 
+and integrates seamlessly with HTML, CSS, and a rich standard library.
+
+JavaScript is a single-threaded language that executes one task at a time.
+It is an interpreted language which means it executes the code line by line.
+The data type of the variable is decided at run-time in JavaScript, which is why it is called dynamically typed.
+
+2>Key Features of JavaScript:->
+
+Here are some key features of JavaScript that make it a powerful language for web development:
+
+Client-Side Scripting:JavaScript runs on the user's browser, so has a faster response time without needing to communicate with the server.
+Versatile: JavaScript can be used for a wide range of tasks, from simple calculations to complex server-side applications.
+Event-Driven: JavaScript can respond to user actions (clicks, keystrokes) in real-time.
+Asynchronous: JavaScript can handle tasks like fetching data from servers without freezing the user interface.
+Rich Ecosystem: There are numerous libraries and frameworks built on JavaScript, 
+such as React, Angular, and Vue.js, which make development faster and more efficient.
+
+3>JavaScript's flexibility extends to both the client-side and server-side, allowing developers to create complete web applications. 
+Here’s how it functions in each environment:
+
+Client-Side:
+
+Involves controlling the browser and its DOM (Document Object Model).
+Handles user events like clicks and form inputs.
+Common libraries include AngularJS, ReactJS, and VueJS.
+
+Server-Side:
+
+Involves interacting with databases, manipulating files, and generating responses.
+Node.js and frameworks like Express.
+js are widely used for server-side JavaScript, enabling full-stack development.
+
+4>JavaScript Versions
+Let’s take a look at the different versions of ECMAScript, their release years, and the key features they introduced
+
+Version
+
+1995- JavaScriptis created by brendon eich
+
+2005- AJAX gains Popularity
+
+2009- ES5 Node.js launched - strict mode, JSON, getters/setters
+
+2010-framework boom
+
+2015- ES6 -let/const, classes, arrow functions
+
+2016-2022- ES7-ES13-  async/await, BigInt, optional chaining
+
+2023-ES14-  toSorted, findLast, static blocks
