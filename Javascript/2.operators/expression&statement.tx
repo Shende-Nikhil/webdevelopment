@@ -1,0 +1,25 @@
+Expression:
+An expression is a piece of code that evaluates to a single value. 
+This value can then be used in other parts of the program. 
+
+Examples:
+
+5 + 7 (evaluates to 12)
+
+"hello" (evaluates to the string "hello")
+
+myFunction() (evaluates to the return value of the function)
+x > 10 (evaluates to true or false)
+
+Statement:
+A statement is a piece of code that performs an action or controls the flow of the program. 
+Statements do not necessarily produce a value that can be assigned or used directly in an expression.
+
+Examples:
+if (condition) { /* code */ } (controls execution based on a condition)
+
+for (let i = 0; i < 5; i++) { /* code */ } (creates a loop)
+
+const x = 10; (declares a variable and assigns a value)
+
+console.log("Hello"); (performs an action of logging to the console)

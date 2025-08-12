@@ -1,0 +1,53 @@
+...Types of conversions
+The type casting is of two types in JavaScript. 
+They are the implicit type conversions and the explicit type conversions.
+
+*Implicit type casting:-
+The implicit type casting is the conversion of data type done due to the internal requirement
+ or automatic conversion by the compiler or the interpreter.
+
+To understand the implicit conversion let us consider the example of the boolean values (primitive).
+
+JavaScript expects a boolean value in a conditional expression. So JavaScript will temporarily
+ convert the value in parentheses to a boolean to evaluate the if expression ?
+
+ The values 0, -0, '' (empty string), NaN, undefined, and null, evaluate to false and all other values evaluate to true, even empty arrays and objects.
+
+Implicit conversion with == operator
+
+Type conversion is also performed when comparing values using the equal (==) and not equal (!=) operators. So when you compare the number 125 with a string '125' using the equals (==) operator, the expression evaluates to true ?
+
+console.log( 125 == '125' );
+Type conversion is not performed when using the identical (===) and not identical (!==) operators.
+
+
+*Explicit type casting:-
+The second type casting the explicit type casting is done forcefully by the developer for the sake of a good line of code. In JavaScript the type casting can be done only for strings, numbers and Boolean (object) data types.
+
+Examples of the explicit type casting are methods parseInt(), parseFloat() and toString().
+
+The parseInt() function converts its first argument to a string, parses that string, then returns an integer or NaN.
+
+The parseFloat() function parses an argument (converting it to a string first if needed) and returns a floating point number.
+
+The toString() method returns a string representing the object, i.e., it tries to convert object to string.
+
+*Typecasting in Strings:-
+In JavaScript the strings are treated as objects. So, here in string type casting anything like a number or a character given will be converted to a string. The String() is used to convert any given value to string.
+
+Syntax
+The typecasting for a string can be done by using the following syntax.
+
+String(input)
+The String() method will take one parameter, i.e., the input which is to be converted to string.
+
+*Numeric Typecasting:-
+To convert the given input to a number the Number() method is used. It takes one parameter i.e., the input which is given to be converted to number. The conversions can be done to float type or integer type.
+
+To convert it in to Integer type, parseInt() method is used. To convert it in to Float type, parseFloat() is used.
+
+Syntax
+Number(input)
+parseInt(input)
+parseFloat(input)
+The three methods will take the given input as the parameter and converts respective of the method used.
