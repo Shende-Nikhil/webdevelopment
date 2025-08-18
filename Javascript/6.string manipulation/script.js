@@ -46,18 +46,15 @@
 //4) count all character
 
 let str = "hello world";
-let charCount = {};
+let uniquestr = {};
 
 for (let i = 0; i < str.length; i++) {
-    let ch = str[i];
-    if (charCount[ch]) {
-        charCount[ch]++;
-    } else {
-        charCount[ch] = 1;
-    }
+    let ch = str.charAt(i); 
+    uniquestr[ch] = (uniquestr[ch] || 0) + 1;
 }
 
-console.log(charCount);
+console.log(uniquestr);
+
 
 
 
