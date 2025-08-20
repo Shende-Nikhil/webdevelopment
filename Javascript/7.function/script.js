@@ -83,5 +83,25 @@ const getNextLeapYear = (current_year) => {
 getNextLeapYear(2196); 
 getNextLeapYear(2023);  
 
+//exponent
+
+function power(base, exponent) {
+    return Math.pow(base, exponent);
+}
+
+console.log(power(2, 4)); 
+
+
+function exponent(base, power) {
+    let result = 1;
+
+    for (let i = 1; i <= power; i++) {
+        result = result * base;
+    }
+
+    return result;
+}
+console.log(exponent(5, 4)); 
+
 
 
