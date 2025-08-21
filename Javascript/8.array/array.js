@@ -90,8 +90,56 @@ let numbers = [1,2,3,4,5]
 
 // Array.splice(start index, delete count, replacement)
 
-console.log(numbers)
+// console.log(numbers)
 
-numbers.splice(3,0,"hello")
+// numbers.splice(3,0,"hello")
 
-console.log(numbers)
+// console.log(numbers)
+
+// Array.method()
+
+// push, pop, shift, unshift, slice, splice, lastIndexOf, indexOf, includes
+
+// console.log([1,2,3,4,5,5].indexOf(5))
+
+// console.log([1,2,3,4,5,5].lastIndexOf(5))
+
+// console.log([1,2,3].includes("1"))
+
+
+
+
+
+console.log(
+    linearSerach([
+    {name:"student1"},
+    {name:"student2"},
+    {name:"student3"},
+    {name:"student4"},
+    {name:"student5"}
+], "student10")
+)
+
+function linearSerach(arr, search) {
+
+    let flag = false
+
+    let steps = 0
+
+    for (let index = 0; index < arr.length; index++) {
+
+        steps++
+
+        if (arr[index].name === search) {
+            flag = true
+        }
+
+        if (flag) {
+            return `element ${search} found at position ${index + 1} in ${steps} steps`
+        }
+
+    }
+
+    return `element ${search} not found at any position in ${steps} steps`
+
+}
