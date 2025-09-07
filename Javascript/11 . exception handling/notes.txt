@@ -1,0 +1,35 @@
+1--What is Exception Handling?
+
+Exception handling is the process of detecting, controlling, and responding to errors in a program.
+
+Without handling, JavaScript stops execution when an error occurs.
+
+With handling, developers can provide alternative flows, user-friendly messages, or recovery options.
+
+
+
+2--Key Concepts in Exception Handling
+
+Error Object – When an error occurs, JavaScript creates an error object containing details like name, message, and stack trace.
+
+Synchronous Errors – Errors that occur immediately during execution (e.g., calling an undefined function).
+
+Asynchronous Errors – Errors that happen later, usually inside asynchronous operations (e.g., network request failure).
+
+Runtime Errors vs. Syntax Errors –
+
+Syntax errors are caught at compile-time (before execution).
+
+Runtime errors happen when the code is running.
+
+
+
+3---Mechanism of Exception Handling
+
+JavaScript provides structured ways to handle exceptions:
+
+Try Block: Section where code that might throw errors is written.
+
+Catch Block: Section that defines how to handle the error when it occurs.
+
+Finally Block: Optional section that always executes (used for cleanup like closing files, stopping timers).

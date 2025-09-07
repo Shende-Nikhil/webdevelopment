@@ -1,0 +1,48 @@
+1--DOM manipulation:-
+                     when a web page is loaded, the browser creates a document object model of the page .
+                     it allow us to manipulate / change webpage content(html element).
+                     dom is logical tree.
+
+//selecting with id 
+document.getElementById(id)	//Find an element by element id.
+
+//selecting with tag
+document.getElementsByTagName(name)	//Find elements by tag name.
+
+//selecting with class
+document.getElementsByClassName(name)	//Find elements by class name
+
+//quary selector
+document.queryselector(name)//id/class/tag  (single element)
+
+//quary selector all
+document.queryselectorAll(name)//id/class/tag  (nodelist)
+
+2--property
+
+//tag name -- returns tag for element nodelist.
+//innerText -- shows the visible text contained in nodes.
+//innerHTML-- shows the full Markup.
+//textcontent--shows all the full text for hidden element
+
+3---Attribute
+
+//getAttribute(attr) -- to get the attribute value
+//setAttribute(attr, value)--- set the attribute value 
+
+4--style.property
+.obj.style
+obj.style.color='gree'
+
+5--classList
+
+a- classList.add()  //to add new classes
+b-classList.remove()  // to remove classes
+c-classList.contains()  //to check if class exist.
+d-classList.toggle() // to toggle between add & remove
+
+6--event listners
+
+--obj.addEventlistners(event,callback)
+--obj.removeEventlistners(event,callback)
+
