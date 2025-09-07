@@ -67,7 +67,7 @@ console.log(next_leap_year);
 
 //palindrome number
 
-let number = org_number = 123;
+let number = org_number = 121;
 
 let rev = 0;
 let d = 0;

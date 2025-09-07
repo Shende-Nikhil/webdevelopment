@@ -1,69 +1,50 @@
-// js promises
-
-function getData(name) {
-    let myPromise = new Promise((resolve, reject) => {
-        if (name == "Amey") {
+//js promise
+function checkAge(age) {
+    return new Promise((resolve, reject) => {
+        if (age >= 18) {
             setTimeout(() => {
-                resolve(
-                    {
-                        message: "promise is resolved",
-                        data: {
-                            name: "amey khonekar",
-                            phone: 9766696550
-                        }
-                    }
-                )
-            }, [2000])
+                resolve({
+                    message: "You are eligible (Promise Resolved )",
+                    data: { age }
+                });
+            }, 2000);
         } else {
             setTimeout(() => {
-                reject(
-                    {
-                        message: "name not matched this promise is rejected !"
-                    }
-                )
-            }, [5000])
+                reject({
+                    message: "You are not eligible (Promise Rejected )"
+                });
+            }, 2000);
         }
-    })
-    return myPromise
+    });
 }
 
-// in js there are 2 methods to handle a promise 
+//then and catch 
 
-// then , catch and finally 
+checkAge(20)
+    .then((response) => {
+        console.log(" Success:", response.message);
+        console.log("Data:", response.data);
+    })
+    .catch((error) => {
+        console.log(" Error:", error.message);
+    })
+    .finally(() => {
+        console.log(" Promise Completed!");
+    });
 
-// getData("some name").then((resolve) => {
-//     console.log("promise is resolved : ")
-//     console.log(resolve)
-// }).catch((reject) => {
-//     console.log("promise is rejected : ")
-//     console.log(reject)
-// }).finally(() => {
-//     console.log("promise completed !")
-// })
+//async and await
 
-// getData("Amey").then((resolve) => {
-//     console.log("promise is resolved 2 : ")
-//     console.log(resolve)
-// }).catch((reject) => {
-//     console.log("promise is rejected : ")
-//     console.log(reject)
-// }).finally(() => {
-//     console.log("promise completed !")
-// })
-
-// funtion().then().catch()
-
-// async & await (has to assigned to a function)
-
-let handlePromise = async (passing_name) => {
+    async function verifyAge(age) {
     try {
-        let result = await getData(passing_name)
-        console.log(result)
-    } catch (err) {
-        console.log('promise has been rejected ')
-        console.error(err)
+        const response = await checkAge(age); 
+        console.log("Success:", response.message);
+        console.log("Data:", response.data);
+    } catch (error) {
+        console.log("Error:", error.message);
+    } finally {
+        console.log("Promise Completed!");
     }
 }
-handlePromise("Amey")
-handlePromise("amey")
-handlePromise("123")
+
+verifyAge(20);  
+verifyAge(15);  
