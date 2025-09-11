@@ -1,59 +1,79 @@
 let tasks = []
 
 let add_notes_button = document.querySelector("#add-notes-button")
+
 let targetElement = document.querySelector(".add-notes-pop-up")
+
 let closeButton = document.querySelector('#close-pop-up')
+
 let taskForm = document.querySelector("#task-form")
+
 let addNotesFormContainer = document.querySelector(".add-notes-form")
 
-function showAddNotesPopup() {
+add_notes_button.addEventListener('click', (event) => {
     targetElement.classList.add("active")
-}
+})
 
-function closeAddNotesPopup() {
+closeButton.addEventListener('click', () => {
     targetElement.classList.remove("active")
-}
-
-add_notes_button.addEventListener('click', showAddNotesPopup)
-closeButton.addEventListener('click', closeAddNotesPopup)
+})
 
 addNotesFormContainer.addEventListener("mouseleave", () => {
     document.getElementById("formSubmitButton").click()
 })
 
-let taskObject = {
-    title: "",
-    description: "",
-    timeStamp: ""
-}
 
-taskForm.addEventListener('submit', e => {
-    e.preventDefault()
-    const title = e.target.title.value.trim()
-    const description = e.target.description.value.trim()
+taskForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    try {
+        if (!event.target["title"].value || !event.target["description"].value) {
+            throw ("empty fields !")
+        }
+        tasks.push({
+            title: event.target["title"].value,
+            description: event.target["description"].value,
+            timeStamp: `T: ${new Date().toLocaleTimeString()} D: ${new Date().toLocaleDateString()}`
+        })
 
-    if (!title || !description) return console.log("empty fields!")
+        event.target["title"].value = ""
+        event.target["description"].value = ""
 
-    tasks.push({
-        title,
-        description,
-        timeStamp: `T: ${new Date().toLocaleTimeString()} D: ${new Date().toLocaleDateString()}`
-    })
+        closeButton.click()
 
-    e.target.reset()
-    closeAddNotesPopup()
-    displayTask()
+        displayTask()
+
+    } catch (err) {
+        console.log("please added task data before submitting ! : ", err)
+    }
 })
 
 function displayTask() {
-    const tasksHTML = tasks.map(task => `
-        <div class="task border p-4">
-            <h4 class="title">${task.title}</h4>
-            <p class="description">${task.description}</p>
-            <span class="timeStamp">${task.timeStamp}</span>
-        </div>
-    `).join("")
-
-    document.querySelector('.tasks-container').innerHTML = tasksHTML
+    document.querySelector('.tasks-container').innerHTML = ""
+    tasks.forEach((task, index) => {
+        let singleTask = document.createElement("div")
+        singleTask.classList.value = "task border p-4"
+        singleTask.innerHTML = `
+                            <h4 class="title">${task.title}</h4>
+                            <p class="description">
+                                ${task.description}
+                            </p>
+                            <span class="timeStamp">${task.timeStamp}</span>
+                            <button onClick='deleteTask(${index})'>delete</button>
+                            <button onClick='editTask(${index})'>Edit</button>
+    `
+        document.querySelector('.tasks-container').appendChild(singleTask)
+    })
+}
+function deleteTask(deleteIndex) {
+    tasks = tasks.filter((task, index) => { return index != deleteIndex })
+    displayTask()
 }
 
+function editTask(editIndex) {
+    // open pop up
+    targetElement.classList.add("active")
+    // access the data for selected task
+    console.log(tasks[editIndex].title)
+    console.log(tasks[editIndex].description)
+    // put selected data into input fields
+}
