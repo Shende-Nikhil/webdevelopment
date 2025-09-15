@@ -3,29 +3,39 @@
     width: 100%;
 }
 
-.main-container>.content>.container {
+.main-container > .content > .container {
     height: auto;
     display: grid;
     grid-template-columns: 30% auto;
+    gap: 1rem;
 }
+
 
 .slider {
     height: 100%;
+    background-color: #f8f9fa; 
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding-top: 1rem;
 }
 
 .slider-options {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .slider-options .option {
     font-weight: bold;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
+    border-radius: 6px;
 }
-
 .slider-options .option:hover {
     background-color: var(--bs-warning);
+    color: #000;
+    padding-left: 1.5rem;
 }
 
 .keeper-body {
@@ -35,6 +45,7 @@
 .action {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .add-notes-pop-up {
@@ -55,15 +66,20 @@
     visibility: visible;
 }
 
-.add-notes-pop-up>.add-notes-form {
+
+.add-notes-pop-up > .add-notes-form {
     z-index: 99;
     width: 500px;
-    height: 500px;
+    max-width: 95%;
+    height: auto;
     background-color: var(--bs-light);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .add-notes-form .content #task-form {
@@ -74,6 +90,46 @@
 }
 
 .content #task-form .title,
-.content #task-form .description {
-    border: none;
+.content #task-form .description,
+.content #task-form select {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+
+.tasks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+
+.task-object {
+    background-color: var(--bs-light);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+.task-object:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Responsive  */
+@media (max-width: 992px) {
+    .tasks-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container > .content > .container {
+        grid-template-columns: 1fr;
+    }
+    .tasks-container {
+        grid-template-columns: 1fr;
+    }
 }
