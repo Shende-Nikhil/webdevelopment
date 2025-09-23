@@ -40,7 +40,7 @@ const getFilterData = (req, res) => {
 
         // Scope filter
         if (scope) {
-            const userScope = scope.toLowerCase().trim();
+            let userScope = scope.toLowerCase().trim();
             resultArray = resultArray.filter(language =>
                 language.scope.some(element => element.toLowerCase() === userScope)
             );
@@ -49,7 +49,7 @@ const getFilterData = (req, res) => {
 
         // Duration filter
         if (duration) {
-            const maxDuration = Number(duration);
+            let maxDuration = Number(duration);
             resultArray = resultArray.filter(language =>
                 Number(language.duration) <= maxDuration
             );
@@ -58,14 +58,14 @@ const getFilterData = (req, res) => {
 
         // Difficulties filter
         if (difficulties) {
-            const userDifficulty = difficulties.toLowerCase().trim();
+            let userDifficulty = difficulties.toLowerCase().trim();
             resultArray = resultArray.filter(language =>
                 language.difficulties.toLowerCase() === userDifficulty
             );
             queryType.push("difficulties");
         }
 
-        if (resultArray.length === 0) throw new Error(`Unable to find languages based on ${queryType.join(", ")}`);
+        if (resultArray.length === 0) throw new Error(`Unable to find languages based on ${queryType}`);
 
         res.status(200).json({
             message: `Got result based on ${queryType.join(", ")}`,
